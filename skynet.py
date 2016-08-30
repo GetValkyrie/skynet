@@ -80,7 +80,7 @@ class Skynet(foundation.CementApp):
         meta_override=['database']
 
 # create the app
-app = Skynet(extensions=['daemon'])
+app = Skynet()
 
 # Register our signal handling hook
 hook.register('signal', skynet_signal_handler)
